@@ -1,0 +1,9 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+note:
+    resource: |
+        alias: app.note
+        templates: :note
+    type: sylius.resource

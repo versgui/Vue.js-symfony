@@ -1,0 +1,7 @@
+sylius_resource:
+    resources:
+        app.note:
+            classes:
+                controller: AppBundle\Controller\NoteController
+                model: AppBundle\Entity\Note
+                repository: AppBundle\Repository\NoteRepository

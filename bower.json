@@ -1,0 +1,16 @@
+{
+  "name": "todolist",
+  "main": "bower.json",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3",
+    "font-awesome": "4.4.0",
+    "ionicons": "2.0.1",
+    "vue": "~2.1",
+    "vue-datetime-picker": "master"
+  }
+}

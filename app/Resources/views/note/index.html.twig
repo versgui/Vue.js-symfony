@@ -1,0 +1,13 @@
+{% extends '::base.html.twig' %}
+
+{% import ':Macros:buttons.html.twig' as buttons %}
+
+{% block h1_title %}Liste des notes{% endblock %}
+
+{% block app %}
+    {{ buttons.create(path('app_note_create'), 'Ajouter une note') }}
+
+    {% for note in notes %}
+        {% include ':note:_single.html.twig' %}
+    {% endfor %}
+{% endblock %}

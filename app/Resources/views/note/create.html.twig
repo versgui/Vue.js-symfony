@@ -1,0 +1,17 @@
+{% extends '::base.html.twig' %}
+
+{% block h1_title %}Créer une note{% endblock %}
+
+{% block app %}
+    {{ form_start(form) }}
+    <div class="box-body">
+        {{ form_row(form.title) }}
+        {{ form_row(form.content) }}
+        {{ form_row(form.date) }}
+    </div>
+
+    <div class="box-footer">
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
+    </div>
+    {{ form_end(form) }}
+{% endblock %}

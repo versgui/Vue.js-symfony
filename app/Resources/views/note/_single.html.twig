@@ -1,0 +1,5 @@
+<div class="col-ls-7">{{ note.title }}</div>
+<div class="col-ls-5">
+    {{ buttons.create(path('app_note_update', {id: note.id}), 'Modifier') }}
+    {{ buttons.delete(path('app_note_delete', {id: note.id}), 'Supprimer') }}
+</div>
